@@ -1,17 +1,19 @@
-public class Sliserin {
+public class Sliserin extends Hogwarts {
     private int cunning;
     private int determination;
     private int ambition;
     private int resourcefulness;
     private int lustForPower;
 
-    public Sliserin(int cunning, int determination, int ambition, int resourcefulness, int lustForPower) {
+    public Sliserin(int transgrassionPower, int magicPower, int cunning, int determination, int ambition, int resourcefulness, int lustForPower) {
+        super(transgrassionPower, magicPower);
         this.cunning = cunning;
         this.determination = determination;
         this.ambition = ambition;
         this.resourcefulness = resourcefulness;
         this.lustForPower = lustForPower;
     }
+
 
     public int getCunning() {
         return cunning;
@@ -52,4 +54,28 @@ public class Sliserin {
     public void setLustForPower(int lustForPower) {
         this.lustForPower = lustForPower;
     }
+
+    public void stats(Sliserin sliserin) {
+        System.out.println("cun- " + getCunning()
+                + "; nob - " + getDetermination()
+                + "; brave - " + getAmbition()
+                + "; nob - " + getResourcefulness()
+                + "; brave - " + getLustForPower()
+                + "; transgraspow - " + getTransgrassionPower()
+                + "; magicpower - " + getMagicPower());
+    }
+
+    public void comparison(Sliserin sliserin) {
+        int sumStudentStats =  this.getLustForPower() + this.getCunning() + this.getAmbition() + this.getResourcefulness() + this.getDetermination();
+        int sumStudentStats1 =  sliserin.getLustForPower() + sliserin.getCunning() + sliserin.getAmbition() + sliserin.getResourcefulness() + sliserin.getDetermination();
+        if (sumStudentStats < sumStudentStats1) {
+            System.out.println("pupit 1 > pupit 2");
+        } else if (sumStudentStats > sumStudentStats1) {
+            System.out.println("pupit 1 < pupit 2");
+        } else {
+            System.out.println("pupits same");
+        }
+
+    }
+
 }
