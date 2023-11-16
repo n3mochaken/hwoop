@@ -1,4 +1,4 @@
-public class Puffendui extends Hogwarts{
+public class Puffendui extends Hogwarts {
     private int hardWork;
     private int loyalty;
     private int honesty;
@@ -33,6 +33,7 @@ public class Puffendui extends Hogwarts{
     public void setHonesty(int honesty) {
         this.honesty = honesty;
     }
+
     public void stats(Puffendui puffendui) {
         System.out.println("hones- " + getHonesty()
                 + "; loyal - " + getLoyalty()
@@ -41,14 +42,14 @@ public class Puffendui extends Hogwarts{
                 + "; magicpower - " + getMagicPower());
     }
 
-    public void comparison (Puffendui puffendui,Puffendui puffendui1){
-        int sumStudentStats = puffendui.getMagicPower() + puffendui.getTransgrassionPower() + puffendui.getHardWork() + puffendui.getLoyalty() + puffendui.getHonesty();
-        int sumStudentStats1 = puffendui1.getMagicPower() + puffendui1.getTransgrassionPower() + puffendui1.getHardWork() + puffendui1.getLoyalty() + puffendui1.getHonesty();
+    public void comparison(Puffendui puffendui) {
+        int sumStudentStats = Puffendui.this.getMagicPower() + Puffendui.this.getTransgrassionPower() + Puffendui.this.getHardWork() + Puffendui.this.getLoyalty() + Puffendui.this.getHonesty();
+        int sumStudentStats1 = puffendui.getMagicPower() + puffendui.getTransgrassionPower() + puffendui.getHardWork() + puffendui.getLoyalty() + puffendui.getHonesty();
         if (sumStudentStats < sumStudentStats1) {
             System.out.println("pupit 1 > pupit 2");
-        } else if (sumStudentStats>sumStudentStats1) {
+        } else if (sumStudentStats > sumStudentStats1) {
             System.out.println("pupit 1 < pupit 2");
-        }else {
+        } else {
             System.out.println("pupits same");
         }
 

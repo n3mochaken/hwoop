@@ -54,6 +54,7 @@ public class Sliserin extends Hogwarts {
     public void setLustForPower(int lustForPower) {
         this.lustForPower = lustForPower;
     }
+
     public void stats(Sliserin sliserin) {
         System.out.println("cun- " + getCunning()
                 + "; nob - " + getDetermination()
@@ -63,14 +64,15 @@ public class Sliserin extends Hogwarts {
                 + "; transgraspow - " + getTransgrassionPower()
                 + "; magicpower - " + getMagicPower());
     }
-    public void comparison (Sliserin sliserin,Sliserin sliserin1){
-        int sumStudentStats = sliserin.getMagicPower() + sliserin.getTransgrassionPower() + sliserin.getLustForPower() + sliserin.getCunning() + sliserin.getAmbition()+sliserin.getResourcefulness()+sliserin.getDetermination();
-        int sumStudentStats1 = sliserin1.getMagicPower() + sliserin1.getTransgrassionPower() + sliserin1.getLustForPower() + sliserin1.getCunning() + sliserin1.getAmbition()+sliserin1.getResourcefulness()+sliserin1.getDetermination();
+
+    public void comparison(Sliserin sliserin) {
+        int sumStudentStats = Sliserin.this.getMagicPower() + Sliserin.this.getTransgrassionPower() + Sliserin.this.getLustForPower() + Sliserin.this.getCunning() + Sliserin.this.getAmbition() + Sliserin.this.getResourcefulness() + Sliserin.this.getDetermination();
+        int sumStudentStats1 = sliserin.getMagicPower() + sliserin.getTransgrassionPower() + sliserin.getLustForPower() + sliserin.getCunning() + sliserin.getAmbition() + sliserin.getResourcefulness() + sliserin.getDetermination();
         if (sumStudentStats < sumStudentStats1) {
             System.out.println("pupit 1 > pupit 2");
-        } else if (sumStudentStats>sumStudentStats1) {
+        } else if (sumStudentStats > sumStudentStats1) {
             System.out.println("pupit 1 < pupit 2");
-        }else {
+        } else {
             System.out.println("pupits same");
         }
 

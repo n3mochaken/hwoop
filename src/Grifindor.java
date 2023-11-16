@@ -33,6 +33,7 @@ public class Grifindor extends Hogwarts {
     public void setBravery(int bravery) {
         this.bravery = bravery;
     }
+
     public void stats(Grifindor grifindor) {
         System.out.println("honor- " + getHonor()
                 + "; nob - " + getNobility()
@@ -41,14 +42,14 @@ public class Grifindor extends Hogwarts {
                 + "; magicpower - " + getMagicPower());
     }
 
-    public void comparison (Grifindor grifindor,Grifindor grifindor1){
-        int sumStudentStats = grifindor.getMagicPower() + grifindor.getTransgrassionPower() + grifindor.getBravery() + grifindor.getNobility() + grifindor.getHonor();
-        int sumStudentStats1 = grifindor1.getMagicPower() + grifindor1.getTransgrassionPower() + grifindor1.getBravery() + grifindor1.getNobility() + grifindor1.getHonor();
+    public void comparison(Grifindor grifindor) {
+        int sumStudentStats = Grifindor.this.getMagicPower() + Grifindor.this.getTransgrassionPower() + Grifindor.this.getBravery() + Grifindor.this.getNobility() + Grifindor.this.getHonor();
+        int sumStudentStats1 = grifindor.getMagicPower() + grifindor.getTransgrassionPower() + grifindor.getBravery() + grifindor.getNobility() + grifindor.getHonor();
         if (sumStudentStats < sumStudentStats1) {
             System.out.println("pupit 1 > pupit 2");
-        } else if (sumStudentStats>sumStudentStats1) {
+        } else if (sumStudentStats > sumStudentStats1) {
             System.out.println("pupit 1 < pupit 2");
-        }else {
+        } else {
             System.out.println("pupits same");
         }
 

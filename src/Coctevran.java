@@ -42,14 +42,14 @@ public class Coctevran extends Hogwarts {
                 + "; magicpower - " + getMagicPower());
     }
 
-    public void comparison (Coctevran coctevran,Coctevran coctevran1){
-        int sumStudentStats = coctevran.getMagicPower() + coctevran.getTransgrassionPower() + coctevran.getWit() + coctevran.getSmart() + coctevran.getCreation();
-        int sumStudentStats1 = coctevran1.getMagicPower() + coctevran1.getTransgrassionPower() + coctevran1.getWit() + coctevran1.getSmart() + coctevran1.getCreation();
+    public void comparison(Coctevran coctevran) {
+        int sumStudentStats = Coctevran.this.getMagicPower() + Coctevran.this.getTransgrassionPower() + Coctevran.this.getWit() + Coctevran.this.getSmart() + Coctevran.this.getCreation();
+        int sumStudentStats1 = coctevran.getMagicPower() + coctevran.getTransgrassionPower() + coctevran.getWit() + coctevran.getSmart() + coctevran.getCreation();
         if (sumStudentStats < sumStudentStats1) {
             System.out.println("pupit 1 > pupit 2");
-        } else if (sumStudentStats>sumStudentStats1) {
+        } else if (sumStudentStats > sumStudentStats1) {
             System.out.println("pupit 1 < pupit 2");
-        }else {
+        } else {
             System.out.println("pupits same");
         }
 
