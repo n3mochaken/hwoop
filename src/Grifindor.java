@@ -43,8 +43,8 @@ public class Grifindor extends Hogwarts {
     }
 
     public void comparison(Grifindor grifindor) {
-        int sumStudentStats = Grifindor.this.getMagicPower() + Grifindor.this.getTransgrassionPower() + Grifindor.this.getBravery() + Grifindor.this.getNobility() + Grifindor.this.getHonor();
-        int sumStudentStats1 = grifindor.getMagicPower() + grifindor.getTransgrassionPower() + grifindor.getBravery() + grifindor.getNobility() + grifindor.getHonor();
+        int sumStudentStats =  this.getBravery() + this.getNobility() + this.getHonor();
+        int sumStudentStats1 =  grifindor.getBravery() + grifindor.getNobility() + grifindor.getHonor();
         if (sumStudentStats < sumStudentStats1) {
             System.out.println("pupit 1 > pupit 2");
         } else if (sumStudentStats > sumStudentStats1) {

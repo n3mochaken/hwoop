@@ -28,7 +28,7 @@ public class Main {
         HarryPotter.comparison(HernionaGraiger);
         ZahariaSmith.comparison(SedricDigory);
 
-        hogwarts.comparison(GragoryGoil, MarcusBelby);
+        hogwarts.comparison(GragoryGoil);
 
 
     }

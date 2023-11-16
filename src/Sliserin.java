@@ -66,8 +66,8 @@ public class Sliserin extends Hogwarts {
     }
 
     public void comparison(Sliserin sliserin) {
-        int sumStudentStats = Sliserin.this.getMagicPower() + Sliserin.this.getTransgrassionPower() + Sliserin.this.getLustForPower() + Sliserin.this.getCunning() + Sliserin.this.getAmbition() + Sliserin.this.getResourcefulness() + Sliserin.this.getDetermination();
-        int sumStudentStats1 = sliserin.getMagicPower() + sliserin.getTransgrassionPower() + sliserin.getLustForPower() + sliserin.getCunning() + sliserin.getAmbition() + sliserin.getResourcefulness() + sliserin.getDetermination();
+        int sumStudentStats =  this.getLustForPower() + this.getCunning() + this.getAmbition() + this.getResourcefulness() + this.getDetermination();
+        int sumStudentStats1 =  sliserin.getLustForPower() + sliserin.getCunning() + sliserin.getAmbition() + sliserin.getResourcefulness() + sliserin.getDetermination();
         if (sumStudentStats < sumStudentStats1) {
             System.out.println("pupit 1 > pupit 2");
         } else if (sumStudentStats > sumStudentStats1) {

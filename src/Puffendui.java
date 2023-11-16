@@ -43,8 +43,8 @@ public class Puffendui extends Hogwarts {
     }
 
     public void comparison(Puffendui puffendui) {
-        int sumStudentStats = Puffendui.this.getMagicPower() + Puffendui.this.getTransgrassionPower() + Puffendui.this.getHardWork() + Puffendui.this.getLoyalty() + Puffendui.this.getHonesty();
-        int sumStudentStats1 = puffendui.getMagicPower() + puffendui.getTransgrassionPower() + puffendui.getHardWork() + puffendui.getLoyalty() + puffendui.getHonesty();
+        int sumStudentStats =  this.getHardWork() + this.getLoyalty() + this.getHonesty();
+        int sumStudentStats1 = puffendui.getHardWork() + puffendui.getLoyalty() + puffendui.getHonesty();
         if (sumStudentStats < sumStudentStats1) {
             System.out.println("pupit 1 > pupit 2");
         } else if (sumStudentStats > sumStudentStats1) {
